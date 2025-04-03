@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Card to make is in this video https://www.youtube.com/watch?v=ovRU9xHfly4&list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&index=30&ab_channel=CodeWithHarry -->
+ <!-- 
+    Good Approach:
+    1. put all the contents inside the tab
+    2. for image use padding to align the image perfectly
+    3. for keywords use div and inside div make two span and put the contents
+    4. for heading use heading tag
+    5. use pargraph tag for paragraph content
+    6. Use div for read more button.    
+ -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 3 - Designing the Card</title>
+    <style>
+        .parent {
+            border: 2px solid rgb(226, 243, 243);
+            border-radius: 20px;
+            width: 400px;
+            height: 570px;
+            /* This CSS shorthand is used to horizontally center a block-level element within its parent container and make responsive also */
+            margin: 0 auto;
+            /* background-color: gray; */
+        }
+
+        .image img {
+            border-radius: 15px;
+            height: 260px;
+            position: relative;
+            left: 4px;
+            top: 4px;
+        }
+
+        .tag {
+            display: inline-block;
+            font-size: 15px;
+            border: 2px solid rgb(226, 243, 243);
+            border-radius: 37px 37px 37px 37px;
+            margin-left: 16px;
+            padding: 6px;
+            margin-top: 13px;
+        }
+
+        div h1 {
+            font-weight: 100;
+            font-weight:bold;
+            margin-left: 11px;
+        }
+
+        p{
+            padding: 7px;
+            text-align: justify;
+        }
+        .end
+        {
+            font-weight:600;
+            font-size: 15px;
+            /* font-weight: 100 bold; */
+            border-radius: 37px 37px 37px 37px;
+            background-color: rgb(176, 209, 237);
+            display: inline-block;
+            padding: 15px;
+            margin-left: 143px;
+            color: blue;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="image"><img src="Images/pexels-thirdman-5537867.jpg " alt="Card Image"></div>
+        <div class="tag">Nature</div>
+        <div class="tag">Adventure</div>
+        <div>
+            <h1>Fishing and Chilling</h1>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eius et laboriosam amet iste aut, eveniet maxime nesciunt cumque voluptate, ipsum corrupti! Facere atque sed suscipit ipsa aperiam quo possimus. Iste quas sequi laudantium odio facilis!</p>
+        <div class="end">Read More</div>
+    </div>
+</body>
+
+</html>
