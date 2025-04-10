@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lets build the navbar</title>
+    <style>
+        .logo-image img {
+            height: 55px;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .container ul {
+            display: flex;
+            column-gap: 30px;
+            list-style: none;
+        }
+
+        .container ul li {
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        .container ul li:last-child {
+            transform: rotate(0.25turn);
+        }
+
+        .body {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 270px);
+            gap: 20px;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .box {
+            height: 200px;
+            width: 270px;
+            background-color: whitesmoke;
+            /* border: 2px solid red; */
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .box button {
+            margin-top: 25px;
+            border: none;
+            background-color: #5cb85c;
+            height: 32px;
+            width: 130px;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .box button a {
+            text-decoration: none;
+            color: aliceblue;
+            /* font-size: large; */
+            font-weight: bold;
+        }
+
+        .box p {
+
+            /* margin-top: 2px; */
+            font-size: 6px;
+        }
+        .box h4
+        {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-weight: lighter;
+            font-size: 10px;
+        }
+
+        
+
+        @media (max-width:960px) {
+            .body {
+                margin-top: 10px;
+                display: grid;
+                grid-template-columns: repeat(2, 270px);
+                gap: 20px;
+                justify-content: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+
+        @media (max-width:500px) {
+            .body {
+                margin-top: 10px;
+                display: grid;
+                grid-template-columns: repeat(1, 270px);
+                gap: 20px;
+                justify-content: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="logo-image"><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+                    alt="logo image"></div>
+            <div class="container">
+                <ul>
+                    <li>Product <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                            color="#650202" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>Pricing<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                            color="#650202" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>Resources<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                            color="#650202" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>About Us<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                            color="#650202" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"
+                            alt="language image"></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                            color="#650202" fill="none">
+                            <path d="M17 17L21 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg></li>
+                </ul>
+            </div>
+        </nav>
+        <main class="body">
+            <div class="box">
+                <h3>English</h3>
+                <button><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1b5xrps*_gcl_au*MTU5Mzk0MzgyLjE3NDM0OTE4MzQ.*_ga*MTE3MTkzMTIzNS4xNzQzNDkxODM0*_ga_QNXHVTPWNS*MTc0NDI4Nzk5Ni4xMC4xLjE3NDQyODgwMDAuNTYuMC4w">Download
+                        64-bit</a></button>
+                <h4>SHA256</h4>
+                <p>ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</p>
+            </div>
+            <div class="box">
+                <h3>English</h3>
+                <button><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1b5xrps*_gcl_au*MTU5Mzk0MzgyLjE3NDM0OTE4MzQ.*_ga*MTE3MTkzMTIzNS4xNzQzNDkxODM0*_ga_QNXHVTPWNS*MTc0NDI4Nzk5Ni4xMC4xLjE3NDQyODgwMDAuNTYuMC4w">Download
+                        64-bit</a></button>
+                <h4>SHA256</h4>
+                <p>ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</p></div>
+            <div class="box"> <h3>English</h3>
+                <button><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1b5xrps*_gcl_au*MTU5Mzk0MzgyLjE3NDM0OTE4MzQ.*_ga*MTE3MTkzMTIzNS4xNzQzNDkxODM0*_ga_QNXHVTPWNS*MTc0NDI4Nzk5Ni4xMC4xLjE3NDQyODgwMDAuNTYuMC4w">Download
+                        64-bit</a></button>
+                <h4>SHA256</h4>
+                <p>ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</p></div>
+            <div class="box"> <h3>English</h3>
+                <button><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1b5xrps*_gcl_au*MTU5Mzk0MzgyLjE3NDM0OTE4MzQ.*_ga*MTE3MTkzMTIzNS4xNzQzNDkxODM0*_ga_QNXHVTPWNS*MTc0NDI4Nzk5Ni4xMC4xLjE3NDQyODgwMDAuNTYuMC4w">Download
+                        64-bit</a></button>
+                <h4>SHA256</h4>
+                <p>ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</p></div>
+            <div class="box"> <h3>English</h3>
+                <button><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1b5xrps*_gcl_au*MTU5Mzk0MzgyLjE3NDM0OTE4MzQ.*_ga*MTE3MTkzMTIzNS4xNzQzNDkxODM0*_ga_QNXHVTPWNS*MTc0NDI4Nzk5Ni4xMC4xLjE3NDQyODgwMDAuNTYuMC4w">Download
+                        64-bit</a></button>
+                <h4>SHA256</h4>
+                <p>ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</p></div>
+            <div class="box"> <h3>English</h3>
+                <button><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1b5xrps*_gcl_au*MTU5Mzk0MzgyLjE3NDM0OTE4MzQ.*_ga*MTE3MTkzMTIzNS4xNzQzNDkxODM0*_ga_QNXHVTPWNS*MTc0NDI4Nzk5Ni4xMC4xLjE3NDQyODgwMDAuNTYuMC4w">Download
+                        64-bit</a></button>
+                <h4>SHA256</h4>
+                <p>ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</p></div>
+            <div class="box"> <h3>한국어</h3>
+                <button><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1b5xrps*_gcl_au*MTU5Mzk0MzgyLjE3NDM0OTE4MzQ.*_ga*MTE3MTkzMTIzNS4xNzQzNDkxODM0*_ga_QNXHVTPWNS*MTc0NDI4Nzk5Ni4xMC4xLjE3NDQyODgwMDAuNTYuMC4w">Download
+                        64-bit</a></button>
+                <h4>SHA256</h4>
+                <p>ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</p></div>
+            <div class="box"> <h3>English</h3>
+                <button><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1b5xrps*_gcl_au*MTU5Mzk0MzgyLjE3NDM0OTE4MzQ.*_ga*MTE3MTkzMTIzNS4xNzQzNDkxODM0*_ga_QNXHVTPWNS*MTc0NDI4Nzk5Ni4xMC4xLjE3NDQyODgwMDAuNTYuMC4w">Download
+                        64-bit</a></button>
+                <h4>SHA256</h4>
+                <p>ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</p></div>
+            <div class="box"> <h3>English</h3>
+                <button><a
+                        href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*1b5xrps*_gcl_au*MTU5Mzk0MzgyLjE3NDM0OTE4MzQ.*_ga*MTE3MTkzMTIzNS4xNzQzNDkxODM0*_ga_QNXHVTPWNS*MTc0NDI4Nzk5Ni4xMC4xLjE3NDQyODgwMDAuNTYuMC4w">Download
+                        64-bit</a></button>
+                <h4>SHA256</h4>
+                <p>ECE5D50C7E98A334AC2BADAC00E8E53B6C492E138BAD6880448CEF8B20A85F9A</p></div>
+        </main>
+    </header>
+</body>
+
+</html>
